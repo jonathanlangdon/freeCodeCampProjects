@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="graphics/favicon.png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Some Javascript Basics</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header><h1>Some Javascript Basics</h1></header>
+      <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#variables">Variables</a></li>
+        <li><a class="nav-link" href="#data-types">Data Types</a></li>
+        <li><a class="nav-link" href="#type-conversion">Type Conversion</a></li>
+        <li><a class="nav-link" href="#numbers-math">Numbers & Math</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header><h2>Introduction</h2></header>
+      <p>This webpage is designed to introduce you to some fundamental concepts in JavaScript, including variables, data types, type conversion, and numbers and math.</p>
+      <p>This webpage is organized into several sections, each focusing on a specific topic. To navigate between the sections, use the links in the navigation menu at the top of the page.</p>
+      <p>We hope you find this resource helpful in your journey to start learning JavaScript.</p>
+    </section>
+    <section class="main-section" id="variables">
+      <header><h2>Variables</h2></header>
+      <p>In JavaScript, variables are used to store and manipulate data. They can be declared using the var, let, or const keywords, and can hold a variety of data types, such as strings, numbers, and booleans. Understanding how to work with variables is crucial to building effective JavaScript applications. In this section, we will explore the basics of declaring and initializing variables, naming conventions, variable types, scope, and more. By the end of this section, you should have a solid understanding of how to use variables in your JavaScript code.</p>
+      <p>Here is an example of the two main types of variables that modern Javascript</p>
+      <p><code>const</code> is used to declare a variable whose value will not change. This is the preferred default declaration.</p>
+      <pre>
+        <code>const yearIndependence = 1776;</code></pre>
+      <p>While <code>let</code> is used to declare a variable that will change later on.</p>
+        <pre>
+        <code>let temperature = 42;
+        temperature = 39;</code></pre>
+      </section>
+    <section class="main-section" id="data-types">
+      <header><h2>Data Types</h2></header>
+      <p>In JavaScript, data types define the type of value that can be stored in a variable. Understanding data types is crucial to building effective JavaScript applications. In this section, we will explore the different data types in JavaScript, including strings, numbers, booleans, null, undefined, and objects. We will also discuss how to work with these data types and how to convert between them. By the end of this section, you should have a solid understanding of how to use data types in your JavaScript code.</p>
+      <p>Data Types:</p>
+      <ul></ul>
+        <li><span class="bold">String</span>: A sequence of characters that can be enclosed in single or double quotes.</li>
+        <li><span class="bold">Number</span>: A numeric value that can be an integer, a floating-point number, or a value represented in exponential notation.</li>
+        <li><span class="bold">Boolean</span>: A value that can be either true or false.</li>
+        <li><span class="bold">Null</span>: A special value that represents nothing, empty, or non-existent.</li>
+        <li><span class="bold">Undefined</span>: A value that represents a variable that has been declared but has not been assigned a value.</li>
+        <li><span class="bold">Object</span>: A complex data type that can hold multiple key-value pairs, and can be used to represent more complex data structures.</li>
+        <p>Here is an example of an object:</p>
+        <pre>
+            <code>const car = {
+              make: "Toyota",
+              model: "Camry",
+              year: 2022,
+              isAutomatic: true,
+              color: "blue"
+            };</code></pre> 
+      </ul>
+    </section>
+    <section class="main-section" id="type-conversion">
+      <header><h2>Type Conversion</h2></header>
+      <p>In JavaScript, type conversion is the process of converting a value from one data type to another. This is an important concept to understand because it allows you to work with different data types in a flexible and dynamic way. In this section, we will explore the basics of type conversion in JavaScript, including the difference between implicit and explicit conversion, how to convert between different data types, and common use cases for type conversion. By the end of this section, you should have a solid understanding of how to use type conversion in your JavaScript code to create more powerful and flexible applications.</p>
+      <p>Here's an example of type conversion in JavaScript:</p>
+          <pre>
+          <code>let numString = "42";
+          let num = Number(numString);
+          console.log(num); // Output: 42 (a number)</code></pre>      
+      <p>In this example, we have a string that contains the value "42". We want to convert this value to a number so we can perform mathematical operations on it. To do this, we use the Number() function to convert the string to a number. We then store the result in a variable called num. Finally, we use console.log() to output the value of num, which is 42.</p>
+    </section>
+    <section class="main-section" id="numbers-math">
+      <header><h2>Numbers & Math</h2></header>
+      <p>In JavaScript, numbers are used to represent numeric values, such as integers and decimals, and math operations can be performed on them using various built-in functions and operators. Understanding how to work with numbers and perform mathematical operations is crucial to building effective JavaScript applications. In this section, we will explore the basics of working with numbers in JavaScript, including number literals, mathematical operators, and common math functions. By the end of this section, you should have a solid understanding of how to use numbers and math functions in your JavaScript code.</p>
+      <p>Here is an example of a math operation we can do:</p>
+      <pre>
+          <code>let num1 = 10;
+          let num2 = 5;
+          let sum = num1 + num2;
+          let difference = num1 - num2;
+          let product = num1 * num2;
+          let quotient = num1 / num2;
+          console.log(sum);        // Output: 15
+          console.log(difference);  // Output: 5
+          console.log(product);    // Output: 50
+          console.log(quotient);   // Output: 2</code></pre>
+    </section>
+    <button id="button-top">Top</button>
+    </main> 
+    <footer></footer>
+  </body>
+</html>
