@@ -5,6 +5,10 @@
   }
 }
 
+:root {
+  --background-button: rgb(55, 183, 226);
+}
+
 html, body {
   box-sizing: border-box;
   min-width: 360px;
@@ -38,10 +42,28 @@ html, body {
 
 #navbar li {
   color: #444;
-  border-top: 2px solid;
   width: 100%;
   padding: 3px 0;
   margin: 0;
+  cursor: pointer;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar li:hover {
+  background: var(--background-button);
+  color: white;
+}
+
+#navbar li:hover a{
+  color: white;
+}
+
+#top-link {
+  border-top: 2px solid black;
 }
 
 #navbar li:last-child {
@@ -49,16 +71,21 @@ html, body {
   border-bottom: 2px solid;
 }
 
-#navbar a {
-  text-decoration: none;
-  cursor: pointer;
-  color: black;
-}
-
 #main-doc {
   position: absolute;
   margin: 0 10px 60px 175px;
   padding: 0 15px;
+}
+
+#button-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 15px;
+  background: var(--background-button);
+  padding: 5px 10px;
+  font-size: larger;
+  cursor: pointer;
 }
 
 
@@ -85,11 +112,11 @@ html, body {
 
   #navbar li {
     display: inline;
-    border: solid;
+    border: 2px solid;
     padding: 10px;
   }
   #navbar a {
     display: inline-block;
-    margin: 10px;
+    margin: 15px 5px;
   }
 }
