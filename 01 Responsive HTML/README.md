@@ -17,7 +17,6 @@ Each project is contained in its own subdirectory, with the following structure:
 project-name/
 ├── index.html
 ├── style.css
-└── README.md
 
 The index.html file contains the HTML for the project, the style.css file contains the CSS for the project, and the README.md file contains a description of the project and any other relevant information.
 Usage
