@@ -5,30 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="graphics/favicon.png" sizes="32x32">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>The Piano Depot</title>
   </head>
   <body>
     <header id="header">
       <img id="header-img" src="graphics/pianoDepot.png" alt="Piano Depot logo">
       <nav id="nav-bar">
         <ul>
-          <li><a class="nav-link" href="#product">Product</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <a class="nav-link" href="#product"><li>Product</li></a>
+          <a class="nav-link" href="#about"><li>About</li></a>
+          <a class="nav-link" href="#contact"><li>Contact</li></a>
         </ul>
       </nav>
     </header>
     <main>
       <section id="product">
         <h2>Your Piano could sound like this!</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/p29JUpsOSTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/p29JUpsOSTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </section>
       <section id="about">
-
+        <div class="about-item">
+          <div class="icon"><i class="fa fa-3x fa-music"></i></div>
+          <div class="about-description">
+            <h2>Premium Sound</h2>
+            <p>At the Piano Depot, we believe that the sound of a piano is as important as its appearance and construction. That's why we devote meticulous attention to the sound quality of every instrument we create. Our pianos feature premium soundboards made of select spruce, which are carefully aged and tested for optimal resonance and tonal clarity. Each piano is also fitted with high-quality strings, hammers, and dampers that are designed to produce a rich and expressive sound. Whether you're playing classical, jazz, or pop, our pianos are engineered to deliver a warm and nuanced sound that will inspire you to reach new heights of musical expression. Discover the joy of playing a piano with premium sound by choosing the Piano Depot.</p>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="icon"><i class="fa fa-3x fa-toolbox"></i></div>
+          <div class="about-description">
+            <h2>Quality Components</h2>
+            <p>At the Piano Depot, we are committed to using only the highest quality components in the construction of our pianos. We believe that every detail matters when it comes to creating an exceptional instrument, which is why we source only the finest materials from trusted suppliers around the world. From the soundboard to the hammers, every component in our pianos is carefully selected and meticulously crafted to ensure the best possible sound, feel, and durability. Whether you're a professional pianist or a passionate enthusiast, you can trust that a piano from the Piano Depot is crafted to the highest standards of excellence.</p>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="icon"><i class="fa fa-3x fa-phone"></i></div>
+          <div class="about-description">
+            <h2>Superb Customer Support</h2>
+            <p>At the Piano Depot, we are dedicated to providing our customers with the highest level of support and service. From the moment you inquire about our pianos to long after your purchase, we are here to assist you with any questions or concerns you may have. Our knowledgeable and friendly team is always available to offer expert advice and guidance, whether you need help choosing the right instrument, setting it up, or maintaining it over the years. We also offer comprehensive warranties and flexible financing options to ensure that our customers have peace of mind and confidence in their purchase. At the Piano Depot, we are committed to building lasting relationships with our customers, and we look forward to serving you with superb customer support.</p>
+          </div>
+        </div>
       </section>
       <section id="contact">
+        <h2>Ready for the next step?</h2>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <label for="email">Enter your email<input id="email" placeholder="Email Address" type="email"></label>
+        <label for="email">Enter your email<input id="email" name="email" placeholder="Email Address" type="email"></label>
+        <br>
         <input type="submit" id="submit" class="button" value="Get more information">
         </form>
       </section>
