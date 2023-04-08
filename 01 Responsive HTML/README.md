@@ -23,11 +23,5 @@ Usage
 
 To view any of the projects, simply open the corresponding index.html file in your web browser. You can also view the projects online by clicking the links below:
 
-    Tribute Page
-    Survey Form
-    Product Landing Page
-    Technical Documentation Page
-    Personal Portfolio Webpage
-
 
 Thank you to freeCodeCamp for providing this excellent curriculum!
