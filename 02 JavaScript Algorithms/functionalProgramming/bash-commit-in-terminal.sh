@@ -5,4 +5,4 @@ read -p "Github comment: " filename
 git add .
 git commit -m "Committing $filename"
 git push
-
+sleep 5
